@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Context } from "../main";
 import axios from "axios";
 import { toast } from "react-toastify";
+import {GiHamburgerMenu} from 'react-icons/gi'
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -45,6 +46,9 @@ const Navbar = () => {
             Login{" "}
           </button>
         )}
+      </div>
+      <div className="hamburger cursor-pointer" onClick={()=>setShow(!show)}>
+        <GiHamburgerMenu/>
       </div>
     </nav>
   );
