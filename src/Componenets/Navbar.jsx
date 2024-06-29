@@ -27,7 +27,7 @@ const Navbar = () => {
   const gotoLogin = async () => {
     navigate("/login")
   };
-  console.log(isAuthenticated,"isAutehntiacated")
+  
   return (
     <nav className="container">
       <div className="logo">SinghCare</div>

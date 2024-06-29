@@ -22,7 +22,7 @@ const App = () => {
       } catch (error) {
         setIsAuthenticated(false)
         setUser({})
-        console.error(error)
+        console.log('Not authenticated')
       }
     }
     fetchUser()
